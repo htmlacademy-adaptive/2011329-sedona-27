@@ -10,18 +10,17 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Логотип города Седона">
       </a>
-      <div class="main-header__burger-menu">
-        <input class="main-header__toggle" type="checkbox" id="main-header__toggle">
-        <label class="main-header__btn" for="main-header__toggle">
-          <span></span>
-        </label>
-        <ul class="main-header__list">
-          <li class="main-header__item main-header__item--current"><a class="main-header__link" href="index.html">Главная</a></li>
-          <li class="main-header__item"><a class="main-header__link" href="catalog.html">Фото и видео</a></li>
-          <li class="main-header__item"><a class="main-header__link" href="form.html">Форма отзыва</a></li>
-          <li class="main-header__item"><a class="main-header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current"><a class="main-header__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Город Седона</h1>
@@ -91,7 +90,7 @@
       </section>
       <section class="search">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__texte">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search__to-all button" href="#">Найти Гостиницу</a>
       </section>
       <section class="location">
