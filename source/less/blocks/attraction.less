@@ -1,35 +1,79 @@
 .attraction {
   display: flex;
   flex-direction: column;
-  padding: 24px 20px 34px;
+  width: 320px;
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
 .attraction__title {
+  padding: 24px 22px 0 22px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-.attraction-container {
-  display: flex;
-  font-display: row;
-  align-items: center;
-  padding-bottom: 16px;
+.attraction__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.attraction__field {
+.attraction__item {
+  margin-bottom: 36px;
+}
+
+.attraction__control {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  padding-left: 62px;
+  text-align: left;
+}
+
+.attraction__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 46px;
   height: 46px;
+  background-color: rgb(242, 242, 242);
 }
 
 .attraction__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  padding-left: 16px;
+}
+
+.attraction__label:hover .attraction__mark {
+  border-color: rgb(229, 229, 229);
+}
+
+.attraction__field:disabled + .attraction__mark {
+  border-color: rgb(213, 213, 213);
+}
+
+.attraction__field[type="checkbox"]:checked + .attraction__mark::before,
+.attraction__field[type="checkbox"]:checked + .attraction__mark::after {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  width: 22px;
+  height: 2px;
+  background-color: rgb(51, 51, 51);
+  content: "";
+}
+
+.attraction__field[type="checkbox"]:checked + .attraction__mark::before {
+  transform: rotate(45deg);
+}
+
+.attraction__field[type="checkbox"]:checked + .attraction__mark::after {
+  transform: rotate(-45deg);
 }

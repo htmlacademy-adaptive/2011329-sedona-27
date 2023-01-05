@@ -58,40 +58,65 @@
             </button>
           </div>
         </section>
-        <section class="impressions">
-          <h2 class="impressions__title">Ваше общее впечатление:</h2>
-          <div class="impressions-container">
-            <input class="impressions__field" checked type="radio" name="impress" value="yes" id="positive">
-            <label class="impressions__label" for="positive">Скорее положительное</label>
-          </div>
-          <div class="impressions-container">
-            <input class="impressions__field" type="radio" name="impress" value="yes" id="negative">
-            <label class="impressions__label" for="negative">Скорее отрицательное</label>
-          </div>
-          <div class="impressions-container">
-            <input class="impressions__field" type="radio" name="impress" value="yes" id="abstained">
-            <label class="impressions__label" for="abstained">Затрудняюсь ответить</label>
-          </div>
-        </section>
-        <section class="attraction">
-          <h2 class="attraction__title">Посещенные достопримечательности:</h2>
-          <div class="attraction-container">
-            <input class="attraction__field" checked type="checkbox" name="devilsbridge" value="yes" id="devilsbridge">
-            <label class="attraction__label" for="devilsbridge">Мост Дьявола</label>
-          </div>
-          <div class="attraction-container">
-            <input class="attraction__field" checked type="checkbox" name="hillbell" value="yes" id="hillbell">
-            <label class="attraction__label" for="hillbell">Гора-Колокол</label>
-          </div>
-          <div class="attraction-container">
-            <input class="attraction__field" checked type="checkbox" name="slidepark" value="yes" id="slidepark">
-            <label class="attraction__label" for="slidepark">Слайд-парк</label>
-          </div>
-          <div class="attraction-container">
-            <input class="attraction__field" type="checkbox" name="redrocs" value="yes" id="redrocs">
-            <label class="attraction__label" for="redrocs">Красные скалы</label>
-          </div>
-        </section>
+        <fieldset class="impressions">
+          <legend class="impressions__title">Ваше общее впечатление:</legend>
+          <ul class="impressions__list">
+            <li class="impressions__item">
+              <label class="impressions__control" for="positive">
+                <input class="impressions__field visually-hidden" checked type="radio" name="impress" value="yes" id="positive">
+                <span class="impressions__mark"></span>
+                <span class="impressions__label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="impressions__item">
+              <label class="impressions__control" for="negative">
+                <input class="impressions__field visually-hidden" type="radio" name="impress" value="yes" id="negative">
+                <span class="impressions__mark"></span>
+                <span class="impressions__label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="impressions__item">
+              <label class="impressions__control" for="abstained">
+                <input class="impressions__field visually-hidden" type="radio" name="impress" value="yes" id="abstained">
+                <span class="impressions__mark"></span>
+                <span class="impressions__label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="attraction">
+          <legend class="attraction__title">Посещенные достопримечательности:</legend>
+          <ul class="attraction__list">
+            <li class="attraction__item">
+              <label class="attraction__control" for="devilsbridge">
+                <input class="attraction__field visually-hidden" type="checkbox" name="devilsbridge" value="yes" id="devilsbridge" checked>
+                <span class="attraction__mark"></span>
+                <span class="attraction__label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control" for="hillbell">
+                <input class="attraction__field visually-hidden" type="checkbox" name="hillbell" value="yes" id="hillbell" checked>
+                <span class="attraction__mark"></span>
+                <span class="attraction__label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control" for="slidepark">
+                <input class="attraction__field visually-hidden" checked type="checkbox" name="slidepark" value="yes" id="slidepark">
+                <span class="attraction__mark"></span>
+                <span class="attraction__label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control" for="redrocs">
+                <input class="attraction__field visually-hidden" type="checkbox" name="redrocs" value="yes" id="redrocs">
+                <span class="attraction__mark"></span>
+                <span class="attraction__label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <section class="impress">
           <h2 class="visually-hidden">Ваши впечатления</h2>
           <label class="impress__text" for="textarea">Опишите свои эмоции:</label>
