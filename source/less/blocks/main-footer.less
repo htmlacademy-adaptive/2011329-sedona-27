@@ -17,3 +17,41 @@
   text-transform: uppercase;
   padding-bottom: 34px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    width: 768px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 76px 36px 45px;
+    box-sizing: border-box;
+  }
+
+  .main-footer__copyright {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-footer__social {
+    padding: 40px 0;
+  }
+
+  .main-footer__title {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: 1200px;
+    height: 120px;
+  }
+
+  .main-footer__wrapper {
+    padding: 36px 136px 36px 104px;
+  }
+}

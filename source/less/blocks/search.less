@@ -1,6 +1,8 @@
 .search {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 320px;
   box-sizing: border-box;
@@ -55,3 +57,20 @@
 .search__to-all:disabled {
   background-color: #e6e6e6;
 }
+
+@media (min-width: @tablet-width) {
+  .search {
+    width: 768px;
+    height: 318px;
+    padding: 61px 155px 98px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search {
+    width: 1200px;
+    height: 318px;
+    padding: 61px 371px 106px;
+  }
+}
+

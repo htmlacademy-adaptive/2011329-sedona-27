@@ -1,8 +1,12 @@
 .impress {
+  width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 24px 20px 34px;
+  align-items: center;
+  padding: 24px 20px 56px;
+  border: none;
   border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 }
 
 .impress__title,
@@ -16,9 +20,44 @@
 }
 
 .impress__review {
-  padding: 16px;
+  width: 279px;
 }
 
 .impress-container {
   padding: 52px 20px 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .impress {
+    width: 768px;
+    padding-top: 0;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .impress__review {
+    width: 648px;
+  }
+
+  .impress-container {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    padding: 0;
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impress {
+    width: 1200px;
+  }
+
+  .impress__review {
+    width: 768px;
+  }
+
+  .impress-container {
+    width: 768px;
+  }
 }
