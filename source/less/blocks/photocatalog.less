@@ -22,9 +22,21 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.photocatalog__info-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.photocatalog__text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .photocatalog__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 0px;
   font-weight: 700;
   padding-top: 15px;
   text-transform: uppercase;
@@ -46,4 +58,96 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .photocatalog {
+    width: 768px;
+    padding: 0 60px;
+  }
+
+  .photocatalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 768px;
+  }
+
+  .photocatalog__card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    width: 324px;
+    height: 347px;
+  }
+
+  .photocatalog__card--first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    height: 480px;
+  }
+
+  .photocatalog__card:first-child {
+    border: none;
+  }
+
+  .photocatalog__info-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+  }
+
+  .photocatalog__text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .photocatalog__info-wrap--smaller {
+    width: 324px;
+  }
+
+  .photocatalog__like-button {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photocatalog {
+    width: 1200px;
+    padding: 0;
+  }
+
+  .photocatalog__list {
+    width: 1200px;
+  }
+
+  .photocatalog__card {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photocatalog__card--first {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photocatalog__info-wrap {
+    width: 1200px;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+  }
+
+  .photocatalog__info-wrap--smaller {
+    width: 400px;
+  }
 }

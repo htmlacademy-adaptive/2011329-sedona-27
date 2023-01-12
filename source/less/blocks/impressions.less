@@ -92,3 +92,25 @@
   border-radius: 50%;
   content: "";
 }
+
+@media (min-width: @tablet-width) {
+  .impressions {
+    width: 768px;
+    padding: 28px 36px;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .impressions__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impressions {
+    width: 1200px;
+  }
+}
+

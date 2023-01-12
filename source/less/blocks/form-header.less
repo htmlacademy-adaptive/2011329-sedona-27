@@ -22,3 +22,27 @@
   color: #333333;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .form-header {
+    width: 768px;
+    padding: 64px 166px 102px;
+  }
+
+  .form-header__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .form-header__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header {
+    width: 1200px;
+    padding: 115px 383px 67px;
+  }
+}

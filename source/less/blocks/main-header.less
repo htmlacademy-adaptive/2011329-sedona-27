@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   width: 320px;
-
 }
 
 .main-header__logo {
@@ -11,5 +10,27 @@
   padding-right: 25px;
   padding-top: 0;
   position: absolute;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 768px;
+    height: 56px;
+  }
+
+  .main-header__logo {
+    padding-left: 291px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+    height: 56px;
+  }
+
+  .main-header__logo {
+    padding-left: 507px;
+  }
 }
 

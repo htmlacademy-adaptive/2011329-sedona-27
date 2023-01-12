@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,8 +16,8 @@
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current"><a class="main-header__link" href="index.html">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--current" href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--current"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
@@ -35,15 +36,13 @@
         </div>
         <div class="advantages__wrapper">
           <ol class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--bigger">
               <div class="advantages__wrap advantages__wrap--darker">
                 <h3 class="advantages__title">Настоящий городок</h3>
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__info">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages__image" src="img/open-range.jpg" width="320" height="260" alt="Фото домов Седоны">
-            </li>
-            <li class="advantages__item-sublist">
               <ul class="advantages__advantages-sublist">
                 <li class="advantages__sublist-item">
                   <img class="advantages__icon" src="img/house.svg" width="39" height="37" alt="Домик">
@@ -62,13 +61,13 @@
                 </li>
               </ul>
             </li>
-            <li class="advantages__item">
-              <img class="advantages__image" src="img/devils-bridge.jpg" width="320" height="260" alt="Фото моста Дьявола">
+            <li class="advantages__item advantages__item--big">
               <div class="advantages__wrap advantages__wrap--darker">
                 <h3 class="advantages__title">Там есть мост Дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
                 <p class="advantages__info">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
+              <img class="advantages__image advantages__image--reverse" src="img/devils-bridge.jpg" width="320" height="260" alt="Фото моста Дьявола">
             </li>
             <li class="advantages__item">
               <div class="advantages__wrap">

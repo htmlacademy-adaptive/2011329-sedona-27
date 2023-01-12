@@ -77,3 +77,24 @@
 .attraction__field[type="checkbox"]:checked + .attraction__mark::after {
   transform: rotate(-45deg);
 }
+
+@media (min-width: @tablet-width) {
+  .attraction {
+    width: 768px;
+    padding: 28px 84px;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .attraction__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    width: 1200px;
+  }
+}
