@@ -68,6 +68,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 0;
   padding-bottom: 11px;
 }
 
@@ -76,6 +77,7 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-top: 0;
   padding-bottom: 17px;
 }
 
@@ -101,4 +103,121 @@
   background-color: #ffffff;
   padding: 33px 18px 40px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 768px;
+  }
+
+  .advantages__header {
+    width: 768px;
+    padding: 47px 124px 55px 124px;
+  }
+
+  .advantages__wrapper {
+    width: 768px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: start;
+    width: 768px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .advantages__item {
+    width: 256px;
+  }
+
+  .advantages__item--bigger {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item--big {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__image--reverse {
+    order: -1;
+  }
+
+  .advantages__wrap {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__advantages-sublist {
+    display: flex;
+    width: 768px;
+  }
+
+  .advantages__sublist-item {
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1200px;
+  }
+
+  .advantages__header {
+    width: 1200px;
+    padding: 47px 124px 55px 124px;
+  }
+
+  .advantages__wrapper {
+    width: 1200px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: start;
+    width: 1200px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .advantages__item {
+    width: 400px;
+  }
+
+  .advantages__item--bigger {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item--big {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__wrap {
+    width: 400px;
+    padding: 63px 50px 41px;
+  }
+
+  .advantages__advantages-sublist {
+    display: flex;
+    width: 1200px;
+  }
+
+  .advantages__sublist-item {
+    width: 400px;
+  }
 }

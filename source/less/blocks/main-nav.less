@@ -16,3 +16,26 @@
   background-color: #81b3d2;
   border: none;
 }
+
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+  }
+
+  .main-nav__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+}
+

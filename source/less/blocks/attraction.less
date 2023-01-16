@@ -26,13 +26,13 @@
 
 .attraction__item {
   margin-bottom: 36px;
+  width: 230px;
 }
 
 .attraction__control {
   position: relative;
   display: block;
-  padding-top: 10px;
-  padding-left: 62px;
+  padding: 10px 52px 10px 62px;
   text-align: left;
 }
 
@@ -76,4 +76,30 @@
 
 .attraction__field[type="checkbox"]:checked + .attraction__mark::after {
   transform: rotate(-45deg);
+}
+
+@media (min-width: @tablet-width) {
+  .attraction {
+    width: 768px;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .attraction__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 28px 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attraction {
+    width: 1200px;
+  }
+
+  .attraction__list {
+    padding: 31px 0;
+  }
 }

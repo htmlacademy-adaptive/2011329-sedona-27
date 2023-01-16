@@ -15,5 +15,39 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 0;
   padding-bottom: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 76px 0 45px;
+    box-sizing: border-box;
+  }
+
+  .main-footer__copyright {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-footer__social {
+    padding: 40px 0;
+  }
+
+  .main-footer__title {
+    padding: 34px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__wrapper {
+    width: 1200px;
+    padding: 0 136px 0 104px;
+  }
 }

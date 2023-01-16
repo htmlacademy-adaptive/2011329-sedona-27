@@ -1,5 +1,6 @@
 .social {
   width: 156px;
+  padding-top: 0;
   padding-bottom: 40px;
 }
 
@@ -13,8 +14,17 @@
 
 .social__item {
   padding-left: 6px;
+  padding-right: 0;
 }
 
 .social__item:first-child {
   padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

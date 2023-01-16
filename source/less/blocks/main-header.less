@@ -3,13 +3,24 @@
   flex-direction: row;
   justify-content: space-between;
   width: 320px;
-
+  position: relative;
 }
 
 .main-header__logo {
-  padding-left: 67px;
-  padding-right: 25px;
-  padding-top: 0;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+  }
 }
 

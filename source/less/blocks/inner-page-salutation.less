@@ -4,7 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 320px;
-  background-image: url("../img/index-salutation.jpg");
+  background-image: url("../img/inner-page.jpg");
   color: #ffffff;
   background-color: #000000;
   background-size: 100% auto;
@@ -12,6 +12,21 @@
 }
 
 .inner-page-salutation__logo {
-  margin-top: 52px;
-  margin-bottom: 67px;
+  margin: 52px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-page-salutation {
+    width: 768px;
+  }
+
+  .inner-page-salutation__logo {
+    margin: 95px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-page-salutation {
+    width: 1200px;
+  }
 }

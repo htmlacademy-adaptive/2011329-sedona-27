@@ -1,5 +1,27 @@
 .videocatalog {
   width: 320px;
   box-sizing: border-box;
-  padding-left: 25px;
+  position: relative;
 }
+
+.videocatalog__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: @tablet-width) {
+  .videocatalog {
+    width: 768px;
+    margin: 0 0 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .videocatalog {
+    width: 1200px;
+    margin: 0 0 120px;
+  }
+}
+
