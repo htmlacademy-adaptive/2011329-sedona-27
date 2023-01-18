@@ -10,11 +10,16 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
     width: 768px;
+  }
+
+  .main-header__logo {
+    z-index: 4;
   }
 }
 
