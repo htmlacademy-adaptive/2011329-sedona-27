@@ -1,31 +1,123 @@
 .main-nav {
   display: flex;
   width: 320px;
-  max-height: 56px;
+  min-height: 56px;
   background-color: #ffffff;
-}
-
-.main-nav__wrapper {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 277px;
+  position: relative;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 4;
+  display: block;
   width: 23px;
-  background-color: #81b3d2;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
   border: none;
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#81b3d2, 30%);
+  box-shadow:
+    0 5px 0 0 fade(#81b3d2, 30%),
+    0 10px 0 0 fade(#81b3d2, 30%);
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 22px;
+  height: 22px;
+  background-color: #81b3d2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 27px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    position: static;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -100%;
+    transition: 0.5s;
+    left: 0;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    background-color: #81b3d2;
+    list-style-type: none;
+    z-index: 3;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #7695aa;
+    border-bottom: 1px solid #bfdef1;
+  }
+
+  .main-nav--nojs .site-list__link {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 17px;
+    padding-bottom: 12px;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: 768px;
-  }
-
-  .main-nav__wrapper {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .main-nav__toggle {

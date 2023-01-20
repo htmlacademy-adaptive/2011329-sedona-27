@@ -2,14 +2,29 @@
   width: 320px;
 }
 
+.location iframe {
+  border: none;
+  display: block;
+}
+
 @media (min-width: @tablet-width) {
   .location {
     width: 768px;
+  }
+
+  .location iframe {
+    width: 768px;
+    height: 350px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .location {
     width: 1200px;
+  }
+
+  .location iframe {
+    width: 1200px;
+    height: 350px;
   }
 }

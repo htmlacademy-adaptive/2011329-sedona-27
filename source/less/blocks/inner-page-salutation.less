@@ -9,6 +9,31 @@
   background-color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.inner-page-salutation::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg width='161' height='57' viewBox='0 0 161 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-190.17 23.7-440 0v57h600.55L-190.17 0v23.7Z' fill='%23fff'/%3E%3C/svg%3E");
+  content: "";
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.inner-page-salutation::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg width='160' height='57' viewBox='0 0 160 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M351.27 23.7V0L.55 57H601V0L351.27 23.7Z' fill='%23fff'/%3E%3C/svg%3E");
+  content: "";
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .inner-page-salutation__logo {
@@ -23,10 +48,34 @@
   .inner-page-salutation__logo {
     margin: 95px auto;
   }
+
+  .inner-page-salutation::before {
+    width: 384px;
+    height: 57px;
+    background-image: url("data:image/svg+xml,%3Csvg width='384' height='57' viewBox='0 0 384 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M33.6 23.7-216 0v57h600L33.6 0v23.7Z' fill='%23fff'/%3E%3C/svg%3E");
+  }
+
+  .inner-page-salutation::after {
+    width: 384px;
+    height: 57px;
+    background-image: url("data:image/svg+xml,%3Csvg width='384' height='57' viewBox='0 0 384 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M350.4 23.7V0L0 57h599.9V0L350.4 23.7Z' fill='%23fff'/%3E%3C/svg%3E");
+  }
 }
 
 @media (min-width: @desktop-width) {
   .inner-page-salutation {
     width: 1200px;
+  }
+
+  .inner-page-salutation::before {
+    width: 600px;
+    height: 57px;
+    background-image: url("data:image/svg+xml,%3Csvg width='600' height='57' viewBox='0 0 600 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M249.6 23.7 0 0v57h600L249.6 0v23.7Z' fill='%23fff'/%3E%3C/svg%3E");
+  }
+
+  .inner-page-salutation::after {
+    width: 600px;
+    height: 57px;
+    background-image: url("data:image/svg+xml,%3Csvg width='600' height='57' viewBox='0 0 600 57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M350.4 23.7V0L0 57h599.9V0L350.4 23.7Z' fill='%23fff'/%3E%3C/svg%3E");
   }
 }
