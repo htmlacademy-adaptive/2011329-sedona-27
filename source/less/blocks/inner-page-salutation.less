@@ -12,6 +12,11 @@
   position: relative;
 }
 
+@media (min-resolution: 2dppx) {
+  background-image: url("../img/inner-page@2x.jpg");
+  background-size: 902px auto;
+}
+
 .inner-page-salutation::before {
   position: absolute;
   left: 0;
@@ -45,6 +50,10 @@
     width: 768px;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-size: cover;
+  }
+
   .inner-page-salutation__logo {
     margin: 95px auto;
   }
@@ -65,6 +74,10 @@
 @media (min-width: @desktop-width) {
   .inner-page-salutation {
     width: 1200px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-size: cover;
   }
 
   .inner-page-salutation::before {

@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона (Каталог)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../source/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../source/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../source/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../source/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../source/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../source/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../source/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../source/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../source/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../source/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../source/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../source/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../source/img/favicon/avicon-16x16.png">
+    <link rel="manifest" href="../source/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../source/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
@@ -15,8 +32,8 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--current" href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--current"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--current" href="catalog.html">Фото и видео</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
@@ -25,7 +42,9 @@
       <main class="catalog-container">
         <section class="inner-page-salutation">
           <h1 class="visually-hidden">Приветствие Города Седона</h1>
-          <img class="inner-page-salutation__logo" src="img/logo.svg" width="229" height="39" alt="Приветствие Города Седона">
+          <picture>
+            <img class="inner-page-salutation__logo" src="img/logo.svg" width="229" height="39" alt="Приветствие Города Седона">
+          </picture>
         </section>
         <section class="catalog-header">
           <h2 class="catalog-header__title">Фото и видео</h2>
@@ -36,7 +55,11 @@
           <ul class="photocatalog__list">
             <li class="photocatalog__card photocatalog__card--first">
               <a class="photocatalog__link" href="#">
-                <img class="photocatalog__image photocatalog__image--first" src="img/photo-1.jpg" alt="photo-1" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img class="photocatalog__image photocatalog__image--first" src="img/photo-1.jpg" width="280" height="280" srcset="img/photo-1@2x.jpg 2x" alt="photo-1">
+                </picture>
               </a>
               <div class="photocatalog__info-wrap">
                 <div class="photocatalog__text-wrap">
@@ -53,7 +76,11 @@
             </li>
             <li class="photocatalog__card">
               <a class="photocatalog__link" href="#">
-                <img class="photocatalog__image" src="img/photo-2.jpg" alt="photo-2" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img class="photocatalog__image" src="img/photo-2.jpg" width="280" height="280" srcset="img/photo-2@2x.jpg 2x" alt="photo-2">
+                </picture>
               </a>
               <div class="photocatalog__info-wrap photocatalog__info-wrap--smaller">
                 <div class="photocatalog__text-wrap">
@@ -70,7 +97,11 @@
             </li>
             <li class="photocatalog__card">
               <a class="photocatalog__link" href="#">
-                <img class="photocatalog__image" src="img/photo-3.jpg" alt="photo-3" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img class="photocatalog__image" src="img/photo-3.jpg" width="280" srcset="img/photo-3@2x.jpg 2x" height="280" alt="photo-3">
+                </picture>
               </a>
               <div class="photocatalog__info-wrap photocatalog__info-wrap--smaller photocatalog__info-wrap--darker">
                 <div class="photocatalog__text-wrap">
@@ -87,7 +118,11 @@
             </li>
             <li class="photocatalog__card">
               <a class="photocatalog__link" href="#">
-                <img class="photocatalog__image" src="img/photo-4.jpg" alt="photo-4" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img class="photocatalog__image" src="img/photo-4.jpg" width="280" height="280" srcset="img/photo-1@2x.jpg 2x" alt="photo-4">
+                </picture>
               </a>
               <div class="photocatalog__info-wrap photocatalog__info-wrap--smaller">
                 <div class="photocatalog__text-wrap">
