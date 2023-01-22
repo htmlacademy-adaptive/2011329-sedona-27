@@ -48,14 +48,20 @@
 @media (min-width: @tablet-width) {
   .inner-page-salutation {
     width: 768px;
+    background-image: url("../img/inner-page-tablet@1x.jpg");
   }
 
   @media (min-resolution: 2dppx) {
-    background-size: cover;
+    background-image: url("../img/inner-page-tablet@2x.jpg");
+    background-size: 1200px auto;
   }
 
   .inner-page-salutation__logo {
-    margin: 95px auto;
+    width: 457px;
+    height: 78px;
+    margin-top: 95px;
+    margin-bottom: 117px;
+    object-fit: contain;
   }
 
   .inner-page-salutation::before {
@@ -74,10 +80,13 @@
 @media (min-width: @desktop-width) {
   .inner-page-salutation {
     width: 1200px;
+    background-position: 50% 0;
+    background-size: cover;
   }
 
-  @media (min-resolution: 2dppx) {
-    background-size: cover;
+  .main-salutation__logo {
+    margin-top: 101px;
+    margin-bottom: 120px;
   }
 
   .inner-page-salutation::before {
