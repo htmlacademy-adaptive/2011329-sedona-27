@@ -140,13 +140,16 @@
 
   .advantages__item--big {
     display: flex;
-    flex-direction: row;
     width: 768px;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
   }
 
-  .advantages__image--reverse {
-    order: -1;
+  .advantages__image {
+    min-width: 512px;
+    height: 100%;
+    object-fit: cover;
+    border: none;
   }
 
   .advantages__wrap {
@@ -202,9 +205,16 @@
 
   .advantages__item--big {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 1200px;
     flex-wrap: wrap;
+  }
+
+  .advantages__image {
+    min-width: 800px;
+    height: 100%;
+    object-fit: cover;
+    border: none;
   }
 
   .advantages__wrap {

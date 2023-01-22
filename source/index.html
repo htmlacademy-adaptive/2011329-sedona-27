@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
@@ -26,7 +44,9 @@
         <h1 class="visually-hidden">Город Седона</h1>
         <section class="main-salutation">
           <h2 class="visually-hidden">Приветствие Города Седона</h2>
-          <img class="main-salutation__logo" src="img/welcome.svg" width="282" height="214" alt="Приветствие Города Седона">
+          <picture>
+            <img class="main-salutation__logo" src="img/welcome.svg" width="282" height="214" alt="Приветствие Города Седона">
+          </picture>
         </section>
         <section class="advantages">
           <div class="advantages__header">
@@ -41,7 +61,11 @@
                   <p class="advantages__number">— №1 —</p>
                   <p class="advantages__info">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="advantages__image" src="img/open-range.jpg" width="320" height="260" alt="Фото домов Седоны">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/open-range-desktop@1x.jpg 1x, img/open-range-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/open-range-tablet@1x.jpg 1x, img/open-range-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/open-range.jpg" width="320" height="260" srcset="img/open-range@2x.jpg 2x" alt="Фото домов Седоны">
+                </picture>
                 <ul class="advantages__advantages-sublist">
                   <li class="advantages__sublist-item">
                     <img class="advantages__icon" src="img/house.svg" width="39" height="37" alt="Домик">
@@ -66,7 +90,11 @@
                   <p class="advantages__number">— №2 —</p>
                   <p class="advantages__info">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-                <img class="advantages__image advantages__image--reverse" src="img/devils-bridge.jpg" width="320" height="260" alt="Фото моста Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop@1x.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet@1x.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/devils-bridge.jpg" width="320" height="260" srcset="img/devils-bridge@2x.jpg 2x" alt="Фото моста Дьявола">
+                </picture>
               </li>
               <li class="advantages__item">
                 <div class="advantages__wrap">

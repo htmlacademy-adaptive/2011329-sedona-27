@@ -1,5 +1,6 @@
 .photocatalog {
   width: 320px;
+  box-sizing: border-box;
 }
 
 .photocatalog__list {
@@ -20,6 +21,12 @@
 
 .photocatalog__card:first-child {
   border-top: 1px solid #e6e6e6;
+}
+
+.photocatalog__image {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: cover;
 }
 
 .photocatalog__info-wrap {
@@ -71,7 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 768px;
+    width: 648px;
   }
 
   .photocatalog__card {
@@ -88,6 +95,19 @@
     justify-content: space-between;
     align-items: center;
     width: 648px;
+  }
+
+  .photocatalog__image {
+    min-width: 324px;
+    min-height: 267px;
+    object-fit: cover;
+    border: none;
+  }
+
+  .photocatalog__image--first {
+    min-width: 648px;
+    min-height: 400px;
+    object-fit: cover;
   }
 
   .photocatalog__card:first-child {
@@ -134,6 +154,14 @@
     padding: 0;
   }
 
+  .photocatalog__info-wrap {
+    background-color: #00000020;
+  }
+
+  .photocatalog__like-button {
+    background-color: transparent;
+  }
+
   .photocatalog__list {
     width: 1200px;
   }
@@ -147,6 +175,19 @@
     width: 1200px;
   }
 
+  .photocatalog__image {
+    min-width: 400px;
+    min-height: 267px;
+    object-fit: cover;
+    border: none;
+  }
+
+  .photocatalog__image--first {
+    min-width: 1200px;
+    min-height: 400px;
+    object-fit: cover;
+  }
+
   .photocatalog__info-wrap {
     width: 1200px;
     padding: 22px 20px 15px;
@@ -156,5 +197,17 @@
 
   .photocatalog__info-wrap--smaller {
     width: 400px;
+  }
+
+  .photocatalog__title {
+    color: #ffffff;
+  }
+
+  .photocatalog__text {
+    color: #ffffff;
+  }
+
+  .photocatalog__like-counter {
+    color: #ffffff;
   }
 }
